@@ -1,0 +1,4 @@
+Header always unset X-Frame-Options
+<IfModule mod_headers.c>
+    Header set Referrer-Policy "origin"
+</IfModule>

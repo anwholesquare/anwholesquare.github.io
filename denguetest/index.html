@@ -1,0 +1,270 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dengue Primary Symptoms Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>body,html{height:100%;}.lg{margin-top: 10px;}.btn-primary{margin-right: 10px;}.progress-bar {-webkit-transition: width 2.5s ease;transition: width 2.5s ease;}</style>
+  <meta property="og:title" content="Dengue Primary Symptoms Test">
+		<meta property="og:description" content="Easily Test Dengue Symptoms Online! Dengue fever, also known as breakbone fever, is a mosquito-borne infection that can lead to a severe flu-like illness. It is caused by four different viruses and spread by Aedes mosquitoes. Symptoms range from mild to severe. Severe symptoms include dengue shock syndrome (DSS) and dengue hemorrhagic fever (DHF)">
+		<meta property="fb:app_id" content="716691511838734"> 
+    
+		<meta property="og:url" content="https://khanan.tk/denguetest/"> 
+		<meta property="og:type" content="website"> 
+		<meta name="author" content="anan">
+		<meta property="og:image" content="/main.jpg">
+		<link rel="manifest" href="https://khanan.tk/manifest.json" />
+		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+		<script>
+		  var OneSignal = window.OneSignal || [];
+		  OneSignal.push(function() {
+			OneSignal.init({
+			  appId: "4bee795e-5fa4-4cdd-971c-090e82b1df33",
+			});
+		  });
+		</script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52550319-10"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-52550319-10');
+		</script>
+</head>
+<body>
+
+<div  id="myCarousel" class="container h-100 carousel slide">
+  <div class="row h-100 justify-content-center align-items-center">
+	<center>
+		<img src="dengue-logo.jpg" class="rounded" height="100px" width="100px" alt="Dengue Alert" style= "margin: 20px;"> 
+
+		<div class="carousel-inner">
+				<div class="carousel-item active">
+					<h1>আপনার কি শরীর ঠান্ডা হয়ে আসছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,1)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,1)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1>আপনার কি ব্লিডিং হচ্ছে?</h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,2)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,2)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+
+				<div class="carousel-item">
+					<h1>আপনার কি গলা ব্যাথা হচ্ছে?</h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,3)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,3)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+
+				<div class="carousel-item">
+					<h1> আপনার কি পেট ব্যাথা হচ্ছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,4)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,4)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1> আপনার কি পাতলা পায়খানা হচ্ছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,5)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,5)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1>  আপনার কি বমি বমি লাগছে?</h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,6)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,6)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1>  আপনার কি মাথাব্যাথা হচ্ছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,7)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,7)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1> আপনার কি জয়েন্টে ব্যাথা হচ্ছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,8)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,8)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1> আপনার কি র‍্যাশ / ফুসকুড়ি হয়েছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,9)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,9)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1>  আপনার কি পেশিতে ব্যাথা হচ্ছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,10)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,10)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1> আপনার কি ৫ দিন এর বেশি সময় ধরে জ্বর রয়েছে? </h1>
+						<button class="btn btn-primary btn-lg" onclick='que(1,11)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='que(0,11)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+				<div class="carousel-item">
+					<h1>আপনার কি ১০৩ এর বেশি জ্বর হয়েছে?</h1>
+						<button class="btn btn-primary btn-lg" onclick='solver(1,12)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	হ্যাঁ
+						</button>
+						<button class="btn btn-danger btn-lg" onclick='solver(0,12)'>
+						  <span class="spinner-grow spinner-grow-sm"></span>
+						  	না
+						</button>
+				</div>
+		  </div>
+		
+	<center>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">ফলাফল</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h5>আমাদের সিস্টেম অনুযায়ী, আপনার ডেঙ্গু হবার সম্ভবনা</h5>
+          <div class="progress" style="height: 40px;">
+    		<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:0%;height: 40px;font-size: 20px;font-weight:bold;"></div>
+  		  </div>
+          <b>আপনার নিকটস্থ হাসপাতাল কিংবা ডায়াগনস্টিক সেন্টার থেকে CBC, NS1 Ag টেস্টগুলো করিয়ে নিশ্চিন্ত হতে পারেন।</b>
+        </div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://bit.ly/denguebd" class="btn btn-info" style="margin: 10px;" role="button">Share Links</a>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        	<mark>কম্পিউটার সিস্টেম কখনই একজন চিকিৎসকের বিকল্প নয়। এই সফটওয়্যার ব্যবহারের ফলে কোন প্রকার ক্ষয়ক্ষতি হলে তার দায়িত্ব সম্পূর্ণরুপে ব্যবহারকারীর নিজের।</mark>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="firstprompt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Read Before the Test</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Terms & Conditions</h5>
+        <p>This application dedicated for social welfare can accumulate, use and distribute personal information in order to provide safe and precisely useful services. For any complaint or suggestion to administration, users can send email to <code>khandokeranan@gmail.com</code></p>
+        <h5>Privacy Policy</h5>
+        <p>We don’t ask for your personal information useless we truly need it. We don’t share your any personal information with anyone</p>
+        <mark>Developer does not warrant, covenant and information. We do not assume responsibility nor accept any liability.</mark>
+      </div>
+      <div class="modal-footer">
+      	 <button type="button" data-dismiss="modal" class="btn btn-primary">I understand</button>
+        <button type="button" class="btn btn-secondary"  onclick="location.href='http://www.dghs.gov.bd/index.php/bd/'">I don't agree</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#firstprompt").modal();
+  $("#myCarousel").carousel();
+});
+var yes = 0;
+ function que(x, y){
+  	if(x === 1){ yes = yes + 1;}
+  	$("#myCarousel").carousel(y);
+  }
+  function solver(x,y){
+  	if(x === 1){ yes = yes + 1;}
+  	var parcentage = (yes/y * 100).toFixed(0);
+  	$(".progress-bar").css('width', parcentage + '%');
+  	$(".progress-bar").text(parcentage + '%');
+  	$("#myModal").modal();
+  }
+
+  $("#myModal").on("hidden.bs.modal", function () {
+  		yes = 0;
+     $("#myCarousel").carousel(0);
+  });
+</script>
+ <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Developed By &copy; <kbd> <a href="https://khanan.tk" >Khandoker Anan </a><kbd></small>
+    </div>
+  </footer>
+</body>
+</html> 
